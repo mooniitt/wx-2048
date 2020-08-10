@@ -1,3 +1,9 @@
-<view class="container">
-  <button>hello</button>
+<view bindtouchstart="touchMove" bindtouchmove="touchMove" bindtouchend="touchMove" class='app'>
+<view>kaishi</view>
+  <view  class="line" wx:for="{{state}}">
+    <view class="block"wx:for="{{state[index]}}">
+      {{item}}
+    </view>
+  </view>
 </view>
+
